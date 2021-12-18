@@ -11,3 +11,12 @@ else:
 #for sentence
 for i in range(5):
     print(i)
+
+#try except sentences
+age = input("please select your age")
+try:
+    int(age) + 1
+except:
+    age = -1
+
+print(age)
