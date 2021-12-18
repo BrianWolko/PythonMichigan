@@ -1,9 +1,7 @@
-x = 1
-y = 2
+#if sentence
+x = 5
 
-print(x)
-
-print( 99 / 100 )
-
-name = input("who are you? ")
-print("Welcome " + name)
+if x == 7:
+    print("true")
+else:
+    print("false")
