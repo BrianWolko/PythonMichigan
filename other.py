@@ -1,9 +1,10 @@
-hrs = input("Enter Hours:")
-h = float(hrs)
-svalue = float(input("Enter value of each hour"))
+def computepay(h, r):
+	h = float(h)
+	r = float(r)
+	if h > 40:
+		total = ((40 * r) + r * 1.5 * (h - 40))
+	else:
+		total = h * r
+	return total
 
-if h > 40.0:
-	fval = 40.0 * svalue + (h - 40.5) * (svalue * 1.5)
-else:
-	fval = svalue * h
-print(fval)
+print(computepay(45, 10.5))
