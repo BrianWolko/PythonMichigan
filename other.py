@@ -1,10 +1,7 @@
-def computepay(h, r):
-	h = float(h)
-	r = float(r)
-	if h > 40:
-		total = ((40 * r) + r * 1.5 * (h - 40))
-	else:
-		total = h * r
-	return total
+x = 10
 
-print(computepay(45, 10.5))
+while x > 0:
+	print(x)
+	x=x - 1
+	if x == 5:
+		break
