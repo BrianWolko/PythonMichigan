@@ -1,7 +1,16 @@
-x = 10
+largest = -10000
+smallest = 10000
+while True:
+    num = input("Enter a number: ")
+    if num == "done":
+        break
+    try:    
+        if int(num) < smallest:
+            smallest = int(num)
+        elif int(num) > largest:
+            largest = int(num)
+    except:
+        	print("Invalid imput")
 
-while x > 0:
-	print(x)
-	x=x - 1
-	if x == 5:
-		break
+print("Maximum is", largest)
+print("Minium is", smallest)
